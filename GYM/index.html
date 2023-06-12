@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100;1,800&family=Bona+Nova:wght@400;700&family=Rajdhani&family=Roboto:wght@100&family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="csss/style.css">
+<style>
+    /* CSS RESET  */
+    body{
+        font-weight: bold;
+        font-family: 'Ubuntu';
+        color: white;
+        height: 100%;
+        background-image: url('img/bg3.jpg');
+        background-size: cover;
+        background-image: no-repeat;
+        height: 900px;
+    }
+    .left{
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+    .left img{
+        filter: invert(100%);
+        width: 75px;
+    }
+    .left div{
+        text-align: center;
+        font-size: 24px;
+        line-height: 9px;
+    }
+    .mid{
+        display: block;
+        width: 50%;
+        margin: 0px auto;
+        /* border: 2px solid green; */
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid orange; */
+    }
+    .navbar{
+        display: inline-block;
+        font-weight: bold;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 20px;
+    }
+    .navbar li a{
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+        padding: 30px 24px;
+        /* font-weight: bold; */
+    }
+    .navbar li a:hover, .navbar li a:active{
+        text-decoration: underline;
+        color: grey;
+    }
+    .btn{
+        font-family: 'Ubuntu';
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 4px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: grey;
+    }
+    .container{
+        /* border: 2px solid red; */
+        margin: 74px 854px;
+    padding: 106px 3px;
+    width: 30%;
+    border-radius: 2px;
+    border: 2px solid black;
+    border-radius: 2px;
+    }
+    .form-action input{
+        text-align: center;
+    display: block;
+    width: 346px;
+    padding: 18px -1px;
+    border: 2px solid white;
+    margin: 3px auto;
+    font-size: 20px;
+    border-radius: 17px;
+    }
+    .container h1{
+        color: black;
+        margin: 38px 7px;
+        padding: 13px 3px;
+        width: 95%;
+        margin-top: -69px;
+    }
+    .container button{
+        display: block;
+    width: 77%;
+    margin: 46px auto;
+    padding: 0px;
+    font-size: 20px;
+    border: 2px solid white;
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left">
+            <img src="img/logo.webp" alt="">
+            <div>Fitness</div>
+        </div>
+        <!-- mid for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class = "active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right for buttons -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">E-Mail Us</button>
+        </div>
+        <div class="container">
+            <h1>Join the best gym of Delhi-NCR</h1>
+            <form action="noaction.php">
+                <div class="form-action">
+                    <input type="text" name="" placeholder="Enter your Name">
+                </div>
+                <div class="form-action">
+                    <input type="text" name="" placeholder="Enter your Age">
+                </div>
+                <div class="form-action">
+                    <input type="text" name="" placeholder="Enter your Gender">
+                </div>
+                <div class="form-action">
+                    <input type="text" name="" placeholder="Enter your Address">
+                </div>
+                <div class="form-action">
+                    <input type="text" name="" placeholder="Enter your E-Mail">
+                </div>
+                <div class="form-action">
+                    <input type="text" name="" placeholder="Enter your Phone-No.">
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </header>
+</body>
+</html>
